@@ -5,7 +5,9 @@
   "main": "index.js",
   "engines": {"node": ">=18"},
   "scripts": {
-    "start": "nodemon index.js"
+    "start:dev":"nodemon",
+    "build":"npm install && rimraf ./build && tsc",
+    "start":"nodemon index.js"
   },
   "keywords": [],
   "author": "",
